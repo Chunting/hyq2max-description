@@ -1,0 +1,96 @@
+
+
+%%%%%
+base configuration (big 4 B)
+
+       x		 			y
+        0.194*3/4 (0.097*175%)		0.887 (0.4435)
+
+RobCoGen        
+
+AA
+        inertias.trunk_Ix  =     0.0816;
+        inertias.trunk_Iy  =     7.4283;
+        inertias.trunk_Iz  =     7.9724;
+        inertias.trunk_Ixy =     0.0157;
+        inertias.trunk_Ixz =    -0.0044;
+        inertias.trunk_Iyz =     0.0011;
+BB
+        inertias.trunk_Ix  =     0.0872;
+        inertias.trunk_Iy  =     7.9353;
+        inertias.trunk_Iz  =     8.5166;
+        inertias.trunk_Ixy =     0.0168;
+        inertias.trunk_Ixz =    -0.0047;
+        inertias.trunk_Iyz =     0.0011;
+CC
+        inertias.trunk_Ix  =     0.0928;
+        inertias.trunk_Iy  =     8.4424;
+        inertias.trunk_Iz  =     9.0608;
+        inertias.trunk_Ixy =     0.0179;
+        inertias.trunk_Ixz =    -0.0050;
+        inertias.trunk_Iyz =     0.0012;
+DD
+        inertias.trunk_Ix  =    0.0983;
+        inertias.trunk_Iy  =    8.9495;
+        inertias.trunk_Iz  =    9.6050;
+        inertias.trunk_Ixy =    0.0189;
+        inertias.trunk_Ixz =   -0.0053;
+        inertias.trunk_Iyz =    0.0013;
+
+EE
+
+        inertias.trunk_Ix  =     0.1039;
+        inertias.trunk_Iy  =     9.4565;
+        inertias.trunk_Iz  =    10.1492;
+        inertias.trunk_Ixy =     0.0200;
+        inertias.trunk_Ixz =    -0.0057;
+        inertias.trunk_Iyz =     0.0014;
+
+
+
+%%%%
+URDF
+
+	<property name="m_trunk" value="79.71"/>
+
+AA
+
+	<property name="ixx_trunk" value=" 0.3923"/>
+	<property name="iyy_trunk" value=" 8.0218"/>
+	<property name="izz_trunk" value=" 9.4084"/>
+	<property name="ixy_trunk" value="-0.0159"/>
+	<property name="ixz_trunk" value=" 0.0083"/>
+	<property name="iyz_trunk" value="-0.0055"/>
+
+BB
+    <property name="ixx_trunk" value=" 0.4191"/>
+    <property name="iyy_trunk" value=" 8.5694"/>
+    <property name="izz_trunk" value="10.0506"/>
+    <property name="ixy_trunk" value="-0.0170"/>
+    <property name="ixz_trunk" value=" 0.0088"/>
+    <property name="iyz_trunk" value="-0.0059"/>
+
+CC
+    <property name="ixx_trunk" value="  0.4459"/>
+    <property name="iyy_trunk" value="  9.1170"/>
+    <property name="izz_trunk" value=" 10.6928"/>
+    <property name="ixy_trunk" value=" -0.0181"/>
+    <property name="ixz_trunk" value="  0.0094"/>
+    <property name="iyz_trunk" value=" -0.0063"/>
+
+DD
+    <property name="ixx_trunk" value=" 0.4727"/>
+    <property name="iyy_trunk" value=" 9.6645"/>
+    <property name="izz_trunk" value="11.3350"/>
+    <property name="ixy_trunk" value="-0.0191"/>
+    <property name="ixz_trunk" value=" 0.0099"/>
+    <property name="iyz_trunk" value="-0.0066"/>
+
+EE
+
+    <property name="ixx_trunk" value=" 0.4994"/>
+    <property name="iyy_trunk" value="10.2121"/>
+    <property name="izz_trunk" value="11.9773"/>
+    <property name="ixy_trunk" value="-0.0202"/>
+    <property name="ixz_trunk" value=" 0.0105"/>
+    <property name="iyz_trunk" value="-0.0070"/>
