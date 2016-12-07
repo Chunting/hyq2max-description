@@ -69,13 +69,15 @@
 			<visual>
 				<origin xyz="0 -0.046 0" rpy="0 ${-PI/2} ${-PI/2}"/>
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
+					<!-- <mesh filename="package://hyq2max_description/meshes/leg/hipassembly.dae" scale="1 1 1"/> -->
+				<cylinder length="0.117" radius="0.0444"/>	
 				</geometry>
 			</visual>
 			<collision>
 				<origin xyz="0 -0.046 0" rpy="0 ${-PI/2} ${-PI/2}"/>
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/hipassembly.dae" scale="1 1 1"/>
+					<!-- <mesh filename="package://hyq2max_description/meshes/leg/hipassembly.dae" scale="1 1 1"/> -->
+				<cylinder length="0.117" radius="0.0444"/>	
 				</geometry>
 			</collision>
 		</link>
@@ -88,15 +90,21 @@
 						 ixy="${reflect_front*ixy_upperleg}" ixz="${reflect_left*ixz_upperleg}" iyz="${reflect_left*reflect_front*iyz_upperleg}"/>
 			</inertial>
 			<visual> 
-				<origin xyz="0 0 ${-0.03*reflect_left}" rpy="${(1-reflect_left)*PI/2} 0 0"/>
+				<!-- <origin xyz="0 0 ${-0.03*reflect_left}" rpy="${(1-reflect_left)*PI/2} 0 0"/> -->
+				<origin xyz="0.180 0 0" rpy="0 0 0"/>
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
+					<!-- <mesh filename="package://hyq2max_description/meshes/leg/upperleg.dae" scale="1 1 1"/> -->
+				<box size="0.360 0.116 0.07"/>
+				<!-- <cylinder length="0.360" radius="0.07"/> -->
 				</geometry>
 			</visual>
 			<collision>
-				<origin xyz="0 0 ${-0.03*reflect_left}" rpy="${(1-reflect_left)*PI/2} 0 0"/>
+				<!-- <origin xyz="0 0 ${-0.03*reflect_left}" rpy="${(1-reflect_left)*PI/2} 0 0"/> -->
+				<origin xyz="0.180 0 0" rpy="0 0 0"/>
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/upperleg.dae" scale="1 1 1"/>
+					<!-- <mesh filename="package://hyq2max_description/meshes/leg/upperleg.dae" scale="1 1 1"/> -->
+				<box size="0.360 0.116 0.07"/>
+				<!-- <cylinder length="0.360" radius="0.07"/> -->
 				</geometry>
 			</collision>
 		</link>
@@ -109,16 +117,20 @@
 						 ixy="${reflect_front*ixy_lowerleg}" ixz="${reflect_front*ixz_lowerleg}" iyz="${iyz_lowerleg}"/>
 			</inertial>
 			<visual>
-				<origin xyz="0 0 0" rpy="${(1-reflect_front)*PI/2} 0 ${PI-reflect_front*knee_offset_angle*PI/180}"/>
+				<!-- <origin xyz="0 0 0" rpy="${(1-reflect_front)*PI/2} 1.57 ${PI-reflect_front*knee_offset_angle*PI/180}"/> -->
+				<origin xyz="0.190 0 0" rpy="0 1.57 0"/>
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
+<!--			<mesh filename="package://hyq2max_description/meshes/leg/lowerleg.dae" scale="1 1 1"/> -->	
+				<cylinder length="0.380" radius="0.02"/>		
 				</geometry>
 				<material name="white"/>
 			</visual>
 			<collision>
-				<origin xyz="0 0 0" rpy="${(1-reflect_front)*PI/2} 0 ${PI-reflect_front*knee_offset_angle*PI/180}"/>
+				<!-- <origin xyz="0 0 0" rpy="${(1-reflect_front)*PI/2} 1.57 ${PI-reflect_front*knee_offset_angle*PI/180}"/> -->
+				<origin xyz="0.190 0 0" rpy="0 1.57 0"/>	
 				<geometry>
-					<mesh filename="package://hyq2max_description/meshes/leg/lowerleg.dae" scale="1 1 1"/>
+<!--			<mesh filename="package://hyq2max_description/meshes/leg/lowerleg.dae" scale="1 1 1"/> -->	
+				<cylinder length="0.380" radius="0.02"/>	
 				</geometry>
 			</collision>
 		</link>
@@ -129,12 +141,12 @@
 				<mass value="0.0"/>
 				<inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" ixz="0.0" iyz="0.0"/>
 			</inertial>
-			<!--<visual>
+			<visual>
 				<origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
 				<geometry>
 					<sphere radius="0.021"/>
 				</geometry>
-			</visual>-->
+			</visual>
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0"/>
 				<geometry>
