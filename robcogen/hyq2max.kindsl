@@ -3,15 +3,15 @@ Robot HyQ2Max {
 /*
  * Default parameter values:
  *
- *  foot_x = 0.38 [m]
+ *  foot_x = 0.39 [m]
  *  trunk_mass = 3.9708019e+01 [kg] (in the C++ code, this MUST BE the initial value)
  *  trunk_CoM = (0.060663, 0.000598, -0.007592)
- *  trunk_Ix  = 0.304383
- *  trunk_Iy  = 4.899863
- *  trunk_Iz  = 4.970291
- *  trunk_Ixy = 0.006527
- *  trunk_Ixz = -0.022946
- *  trunk_Iyz = 0.001581
+ *	trunk_Ix  = 0.304383
+ *	trunk_Iy  = 4.899863
+ *	trunk_Iz  = 4.970291
+ *	trunk_Ixy = 0.006527
+ *	trunk_Ixz = -0.022946
+ *	trunk_Iyz = 0.001581
  */
 
 RobotBase trunk floating {
