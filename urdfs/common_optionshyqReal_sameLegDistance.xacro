@@ -1,0 +1,66 @@
+
+
+%%%%%
+old robcogen 
+
+        CoM = (0.057737, 0.000687, -0.005584)
+        inertias.trunk_Ix  = 0.296767
+        inertias.trunk_Iy  = 4.418458
+        inertias.trunk_Iz  = 4.472778
+        inertias.trunk_Ixy = 0.008818
+        inertias.trunk_Ixz = 0.002473
+        inertias.trunk_Iyz = 0.000597
+
+mass = 79 kg now
+haa_lr = 0.194
+haa_hfe = 0.117
+leg distance = 0.428
+
+RobCoGen        
+
+AA
+        inertias.trunk_Ix  = 0.595701273482750;
+        inertias.trunk_Iy  = 8.869183761772854;
+        inertias.trunk_Iz  = 8.978220457819189;
+        inertias.trunk_Ixy = 0.017700397381012;
+        inertias.trunk_Ixz =-0.004964060186351;
+        inertias.trunk_Iyz = 0.001198359858978;
+
+mass = 79 kg now
+haa_lr = 0.428
+haa_hfe = 0
+leg distance = 0.428
+
+BB
+        inertias.trunk_Ix  = 1.220543655674068;
+        inertias.trunk_Iy  = 8.869183761772854;
+        inertias.trunk_Iz  =10.563317626316065;
+        inertias.trunk_Ixy = 0.039050361232336;
+        inertias.trunk_Ixz =-0.004964060186351;
+
+
+
+%%%%
+URDF
+	<property name="m_trunk" value="79.71"/>
+lengths
+
+AA
+
+	<property name="ixx_trunk" value="0.606365070385293"/>
+	<property name="iyy_trunk" value="9.537595569881642"/>
+	<property name="izz_trunk" value="9.683530508687989"/>
+	<property name="ixy_trunk" value="-0.010207938403425"/>
+	<property name="ixz_trunk" value="0.009349214202972"/>
+	<property name="iyz_trunk" value="-0.003535462679426"/>
+
+BB
+	<property name="ixx_trunk" value="1.242392911726016"/>
+	<property name="iyy_trunk" value="9.537595569881642"/>
+	<property name="izz_trunk" value="11.393149565436213"/>
+	<property name="ixy_trunk" value="-0.022520606374566"/>
+	<property name="ixz_trunk" value="0.009349214202972"/>
+	<property name="iyz_trunk" value="-0.007799886736053"/>
+
+
+
