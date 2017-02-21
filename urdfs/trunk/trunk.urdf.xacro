@@ -34,7 +34,7 @@
 						 ixy="${ixy_trunk}" ixz="${ixz_trunk}" iyz="${iyz_trunk}"/>
 			</inertial>
 			<visual>
-				<origin xyz="0 0 0.025" rpy="0 0 ${PI}" />
+				<origin xyz="0 0 0.0" rpy="0 0 ${PI}" />
 				<!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
 				<geometry>
  					<mesh filename="package://hyq2max_description/meshes/trunk/trunk.dae" scale="0.001 0.001 0.001"/>
@@ -42,7 +42,7 @@
 				</geometry>
 			</visual>
 			<collision>
-				<origin xyz="0 0 0.025" rpy="0 0 ${PI}" />
+				<origin xyz="0 0 0.0" rpy="0 0 ${PI}" />
 				<!-- <origin xyz="0 0 0" rpy="0 0 0" /> -->
 				<geometry>
 					<mesh filename="package://hyq2max_description/meshes/trunk/trunk.dae" scale="0.001 0.001 0.001"/>
