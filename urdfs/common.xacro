@@ -28,6 +28,7 @@
 	<property name="xcom_trunk" value="-0.000503079700"/>
 	<property name="ycom_trunk" value=" 0.000000012738"/>
 	<property name="zcom_trunk" value="-0.105401681219"/>
+	<!-- <property name="zcom_trunk" value="-0.050"/> -->
 	<property name="m_trunk" value="44.143"/>
 	<property name="ixx_trunk" value="0.433864"/>
 	<property name="iyy_trunk" value="3.128618"/>
